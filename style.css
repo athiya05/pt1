@@ -1,0 +1,64 @@
+body {
+    background-image: url(united\ nations.jpg);
+}
+/*Author Picture*/
+.author {
+    -webkit-box-shadow: 5px 0px 5px 0px rgba(0, 0, 50, 0.97);
+    -moz-box-shadow: 5px 0px 5px 0px rgba(0, 0, 50, 0.97);
+    box-shadow: 5px 0px 5px 0px rgba(0, 0, 50, 0.97);
+    float: left;
+    width: 50px;
+}
+
+.byline {
+    font-family: 'Courier New', Courier, monospace;
+    float: left;
+    font-size: 14px;
+    padding-left: 10px;
+    text-transform: capitalize;
+} 
+
+/*Hover Animation*/
+.hover-animation {
+    display: inline-block;
+    position: relative;
+    color: #0e0d0d;
+}
+/*Hover Animation*/
+.hover-animation:after {
+    content: '';
+    position: absolute;
+    width: 19%;
+    height: 3px;
+    background-color: rgb(45, 149, 163);
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+/*Hover Animation*/
+.hover-animation:hover:after {
+    transform-origin: bottom left;
+    transform: scaleX(1);
+}
+/*First Heading*/
+h1 {
+    color: #FFF;
+    font-size: 2em;
+    width: 100%;
+    font-family: Georgia;
+}
+/*Second Heading with CSS border*/
+h2.solid {
+    border: 1px solid;
+    font-size: 2em;
+    width: 100%;
+    font-family: Georgia;
+    background-color: lightskyblue;
+}
+
+p {
+    font-size: 1.5em;
+    font-weight: bold;
+}
